@@ -5,13 +5,15 @@ int main(){
     int dinero, cuenta,in;
     char opcion;
     cout<<"-----Cajero automatico-----"<<endl;
-    cuenta=100;
+    cout<<"Valor de prueba para la cuenta: "<<endl;
+    cin>>cuenta;
+
     cout<<"Total en la cuenta: "<<cuenta<<endl;
     cout<<"Desea depositar(d) o retirar(r) dinero: "<<endl;
     cin>>opcion;
 
      switch (opcion) {
-        case 'i':
+        case 'd':
             cout << "Cantidad a depositar: " << endl;
             cin>>dinero;
             in=dinero+cuenta;
